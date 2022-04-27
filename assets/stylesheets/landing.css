@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@100;400&display=swap');
+
+/*font-family: 'Italiana', serif;
+font-family: 'Roboto', sans-serif;*/
+
+.landing-screen-background {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    background: #eee url(../images/LandingPage.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+/*How do I adjust the margin / leading on this?*/
+.landing-screen-title {
+    font-family: 'Italiana', serif;
+    font-size: 120px;
+    color: #eee;
+    text-align: center;
+    text-shadow: 2px 4px 6px black;
+}
+
+/*How do I get rid of the purple color and underline for links?*/
+.landing-screen-button {
+    font-family: 'Italiana', serif;
+    font-size: 24px;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #eee;
+    padding: 12px 40px;
+    width: fit-content;
+    box-shadow: 2px 2px 10px black;
+}

@@ -1,0 +1,73 @@
+.header-image {
+    width: 830px;
+}
+
+.home-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    max-width: 2200px;
+    padding-top: 40px;
+}
+
+.example-events {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 100%;
+}
+
+.example-events p {
+    max-width: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: rgb(198, 156, 108);
+    text-align: center;
+    padding: 0 40px;
+}
+
+.the-experience-section {
+    align-self: center;
+
+}
+
+.the-experience {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.the-experience-image {
+    width: 300px;
+}
+
+.the-experience-individual {
+    width: 300px;
+    margin-left: 78px;
+}
+
+.how-it-works {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 100%;
+}
+
+.text-wrap-image {
+    width: 300px;
+    float: left;
+    margin: 0 15px 5px 0;
+}
+
+.text-wrap-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
