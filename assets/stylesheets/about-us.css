@@ -1,0 +1,44 @@
+.our-story-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 600px;
+    row-gap: 50px;
+}
+
+.header-3-our-team {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    color: rgb(51, 51, 51);
+    margin-block-start: 20px;
+    margin-block-end: 0px;
+    background-color: rgb(233, 224, 215);
+    padding: 15px 20px;
+}
+
+.contents-our-team {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 100%;
+    padding: 0 20px;
+    column-gap: 50px; 
+    row-gap: 20px;
+}
+
+.body-text-our-team {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin: 5px 0 0 0;
+    max-width: 400px;
+}
+
+.picture-our-team {
+    width: 500px;
+}

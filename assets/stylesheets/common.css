@@ -4,7 +4,7 @@
 font-family: 'Roboto', sans-serif;*/
 
 body {
-    background-color: rgb(249, 248, 246);
+    background-color: rgb(249, 248, 246) !important;
     margin: 0;
 }
 
@@ -18,6 +18,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 0 10px 20px;
+    z-index: 100;
     position: sticky;
     top: 0;
     background-color: rgb(249, 248, 246);
@@ -38,6 +39,11 @@ body {
 }
 
 .no-underline {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+.no-underline:hover {
     text-decoration: none;
     color: rgb(51, 51, 51);
 }
@@ -71,6 +77,17 @@ body {
     margin-block-end: 0px;
 }
 
+.header-1-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Italiana', serif;
+    font-size: 48px;
+    color: rgb(51, 51, 51);
+    margin-block-start: 75px;
+    margin-block-end: 0px;
+}
+
 .header-2 {
     display: flex;
     justify-content: center;
@@ -84,6 +101,14 @@ body {
     margin-block-end: 0px;
 }
 
+.header-3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    color: rgb(51, 51, 51);
+    margin-block-start: 20px;
+    margin-block-end: 0px;
+}
 
 .body-text {
     font-family: 'Roboto', sans-serif;
@@ -92,7 +117,6 @@ body {
     margin: 5px 0 0 0;
 }
 
-/*should i create separate styles for ones that require bottom margins?*/
 .body-text-bottom-margin {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -141,6 +165,7 @@ body {
 .footer ul {
     list-style-type: none;
     padding: 0;
+    margin: 16px 0;
 }
 
 .footer ul li {
@@ -180,4 +205,5 @@ body {
 .footer-copyright {
     font-size: 12px;
     font-weight: 100;
+    margin: 12px 0;
 }
