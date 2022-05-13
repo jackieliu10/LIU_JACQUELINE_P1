@@ -17,7 +17,7 @@
     margin-block-end: 0px;
 }
 
-.table {
+#table {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: rgb(51, 51, 51);
@@ -29,4 +29,14 @@ table th, td {
     border: 1px solid rgb(51, 51, 51);
     padding: 10px 20px;
     text-align: center;
+}
+
+table th:hover {
+    background-color: rgb(233, 224, 215);
+    cursor: pointer;
+}
+
+table th.tablesorter-headerAsc,
+table th.tablesorter-headerDesc {
+    background-color:  rgb(233, 224, 215);
 }

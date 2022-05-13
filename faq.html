@@ -10,6 +10,10 @@
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/common.css"/>
 
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/faq.css"/>
+
+    <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/JavaScript"src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
 </head>
 
 <body>
@@ -54,77 +58,81 @@
             <section>
                 <p class="header-2-faq">What if I have food allergies / dietary restrictions?</p>
                 <p class="body-text">We take food allergies and dietary restrictions very seriously. If you have any requests, we will do our very best to accommodate you. Please see below for our allergy / dietary restriction chart:</p>
-                <table class="table">
-                    <tr>
-                        <th></th>
-                        <th>MILK</th>
-                        <th>EGGS</th>
-                        <th>GLUTEN</th>
-                        <th>NUTS</th>
-                    </tr>
-                    <tr>
-                        <td>Sparkling wine</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>White wine</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Red wine</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Crackers</td>
-                        <td></td>
-                        <td></td>
-                        <td>Y</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Assorted cheese</td>
-                        <td>Y</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Hummus spread</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Assorted meats</td>
-                        <td>Y</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Assorted fruit</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Assorted nurts</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>Y</td>
-                    </tr>
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>ITEM</th>
+                            <th>MILK</th>
+                            <th>EGGS</th>
+                            <th>GLUTEN</th>
+                            <th>NUTS</th>
+                        </tr>
+                    </thead>
+                    <tbody>   
+                        <tr>
+                            <td>Sparkling wine</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>White wine</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Red wine</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Crackers</td>
+                            <td></td>
+                            <td></td>
+                            <td>Y</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Assorted cheese</td>
+                            <td>Y</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Hummus spread</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Assorted meats</td>
+                            <td>Y</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Assorted fruit</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Assorted nurts</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Y</td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
         </div>
@@ -168,6 +176,16 @@
             <p class="footer-copyright">Copyright Luxury Picnics, San Francisco, CA 2022</p>
         </nav>
     </footer>
+   <!--fix this part. maybe need to create a new class or id name for the table?-->
+   <script>
+        $(document).ready(function () {
+          $("#table").tablesorter({
+            sortList: [[2, 0]],
+            CssAsc: "tablesorter-headerAsc",
+            CssDesc: "tablesorter-headerDesc"
+          });
+        });
+    </script>
 </body>
 
 </html>
