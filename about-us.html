@@ -46,24 +46,18 @@
         <div>
             <p class="header-1-small">OUR TEAM</p>
             <div>
-                <div>
-                    <p class="header-3-our-team">FOUNDER: KRYSTAN</p>
-                </div>
+                <p class="header-3-our-team">FOUNDER: KRYSTAN</p>
                 <div class="contents-our-team">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/8fjqqplMDu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p class="body-text-our-team">Krystan may have gone to school for business, but as a child, she always wanted to be an interior designer. She's has an eye for design and strives to give you the most picture-perfect experience possible. Her business background and strong attention to detail means that you won't have to worry about a single thing when you book with us - it'll all be covered! <br> Krystan also has her own successful YouTube channel with over 2,000 subscribers. You can find her by searching the name Aloha Krsytann.</p>
-                </div>
-                <div>
-                    <p class="header-3-our-team">FOUNDER: MICHELE</p>
-                </div>
+                </div>           
+                <p class="header-3-our-team">FOUNDER: MICHELE</p> 
                 <div class="contents-our-team">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/hpFGjRwx_2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p class="body-text-our-team">After working for 10 years consulting for small business owners, Michele decided to start her own business! She's always had a taste for luxury and values spending time with her family and friends. As a new mom, shes realized how precious and important celebrating every milestone can be.
                     <br>Michele also runs her own Youtube channel called Simply Michelee with over 20k subscribers. She also has a blog at simplymichelee.blogspot.com.</p>
                 </div>
-                <div>
-                    <p class="header-3-our-team">EVENT MANAGER: JENNIFER</p>
-                </div>
+                <p class="header-3-our-team">EVENT MANAGER: JENNIFER</p>
                 <div class="contents-our-team">
                     <img class="picture-our-team" src="./assets/images/About-Event.jpg"/>
                     <p class="body-text-our-team">Having grown up in a big family, Jennifer is always celebrating something. From birthdays to weddings, Michele has planned it all and knows firsthand what it takes to have an amazing celebration. She also loves bringing people together and believes that the memories that you make with your loved ones are absolutely priceless. Her goal is to make sure that you can spend the absolutely best time with your friends and family without having to worry about any of the details!
@@ -111,5 +105,21 @@
         </nav>
     </footer>
 </body>
+
+<script>
+    var acc = document.getElementsByClassName("header-3-our-team");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "flex") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "flex";
+      }
+    });
+  }
+</script>
 
 </html>
